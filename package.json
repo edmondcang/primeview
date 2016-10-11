@@ -1,0 +1,14 @@
+{
+  "name": "primeview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "primeview.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edmond Cheng",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "cli-color": "^1.1.0"
+  }
+}
