@@ -36,15 +36,17 @@ var leastFactor = function (n) {
   return n;
 }
 
-var x = 5000;
+var x = 40000;
 var np = 0;
-var w = 135;
+var w = 137;
 
 /* Special 'w's
  * 29
  */
-for (var i = 1; i <= x; i++) {
-  if (i % w == 1)
+
+var nonPrimeClr = clc.xterm(232);
+for (var i = 0; i < x; i++) {
+  if (i % w == 0)
     process.stdout.write('\n');
   if (isPrime(i)) {
     np++;
@@ -52,7 +54,7 @@ for (var i = 1; i <= x; i++) {
     //process.stdout.write(clc.green(i) + '\t');
   }
   else
-    process.stdout.write(clc.red('* '));
+    process.stdout.write(nonPrimeClr('* '));
     //process.stdout.write(clc.red(i) + '\t');
 }
 
